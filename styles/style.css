@@ -1,0 +1,71 @@
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 3240px;
+
+}
+
+.answers1 {
+    display: flex;
+    flex-direction: column;
+    font-family: mislab-narrow-std, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 200px;
+}
+
+.answers2 {
+    display: flex;
+    flex-direction: column;
+    font-family: mislab-narrow-std, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    font-size: 200px;
+}
+
+
+
+#trivQues {
+    font-family: mislab-narrow-std, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 300px 0 0 0;
+}
+
+.question {
+    height: 1920px;
+    width: 1080px;
+    background-color: #4578d6;
+}
+
+.answerA {
+    height: 960px;
+    width: 1080px;
+    background-color: #efc944;
+}
+
+.answerB {
+    height: 960px;
+    width: 1080px;
+    background-color: #f28705;
+}
+
+.answerC {
+    height: 960px;
+    width: 1080px;
+    background-color: #ed4240;
+}
+
+.answerD {
+    height: 960px;
+    width: 1080px;
+    background-color: #33a39a;
+}
