@@ -17,32 +17,103 @@
 <body>
     <div id="wrapper">
 
-        <div class="question animated fadeInRight">
-            <p id="trivQues">Which of these singers was raised in Detroit?</p>
-        </div>
-        <div class="answers1 animated fadeInRight delay-1s">
-            <div class="answerA">
-                <!-- <video id="myVideo" width="1080" height="960" preload autoplay loop muted></video> -->
-                <p>Frank Sinatra</p>
+        <body>
+            <div id="wrapper">
+
+                <div class="question animated fadeInRight">
+                    <p id="trivQues">Which of these singers was raised in Detroit?</p>
+                </div>
+                <div class="answers1 animated fadeInRight delay-1s">
+                    <div id="answerA">
+
+                        <p>Frank Sinatra</p>
+                        <button id="answerAClicks">Vote: 0</button>
+                    </div>
+                    <div id="answerB">
+                        <p>Aretha Franklin</p>
+                        <button id="answerBClicks">Vote: 0</button>
+
+                    </div>
+                </div>
+                <div class="answers2 animated fadeInRight delay-2s">
+                    <div id="answerC">
+                        <p>Michael Jackson</p>
+                        <button id="answerCClicks">Vote: 0</button>
+
+                    </div>
+                    <div id="answerD">
+                        <p>Jay-Z</p>
+                        <button id="answerDClicks">Vote: 0</button>
+
+                    </div>
+                </div>
+
+
+
+                <script>
+                    let buttonA = document.getElementById("answerAClicks"),
+                        countA = 0;
+                    buttonA.onclick = function () {
+                        countA += 1;
+                        buttonA.innerHTML = "Vote: " + countA;
+                    };
+                    let buttonB = document.getElementById("answerBClicks"),
+                        countB = 0;
+                    buttonB.onclick = function () {
+                        countB += 1;
+                        buttonB.innerHTML = "Vote: " + countB;
+                    };
+                    let buttonC = document.getElementById("answerCClicks"),
+                        countC = 0;
+                    buttonC.onclick = function () {
+                        countC += 1;
+                        buttonC.innerHTML = "Vote: " + countC;
+                    };
+                    let buttonD = document.getElementById("answerDClicks"),
+                        countD = 0;
+                    buttonD.onclick = function () {
+                        countD += 1;
+                        buttonD.innerHTML = "Vote: " + countD;
+                    };
+
+                    let trivia = {
+                        question: "Which singer was born in Detroit, MI?"
+                    }
+                    answers: [{
+                            answerA: "Aretha Franklin"
+
+                        },
+                        {
+                            answerB: "Frank Sinatra"
+                        },
+                        {
+                            answerC: "Jay-Z"
+                        },
+                        {
+                            answerD: "Michael Jackson"
+                        }
+                    ], {
+                        question: "What was the nickname for Olympia Stadium, former home of the Detroit Red Wings?"
+                    }
+                    answers: [{
+                            answerA: "The Ice Palace"
+
+                        },
+                        {
+                            answerB: "The Old Red Barn"
+                        },
+                        {
+                            answerC: "The Oly"
+                        },
+                        {
+                            answerD: "The Wing Ring"
+                        }
+                    ]
+                </script>
+
+
+
             </div>
-            <div class="answerB">
-                <p>Aretha Franklin</p>
-            </div>
-        </div>
-        <div class="answers2 animated fadeInRight delay-2s">
-            <div class="answerC">
-                <p>Michael Jackson</p>
-            </div>
-            <div class="answerD">
-                <p>Jay-Z</p>
-            </div>
-        </div>
-
-
-
-
-
-    </div>
-</body>
+        </body>
 
 </html>
